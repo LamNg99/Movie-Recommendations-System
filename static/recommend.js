@@ -11,7 +11,7 @@ $(function () {
   source.addEventListener("input", inputHandler);
 
   $(".movie-button").on("click", function () {
-    var my_api_key = "b81053b72be3942e897a92721bd9a2d2";
+    var my_api_key = "your API key";
     var title = $(".movie").val();
     if (title == "") {
       $(".results").css("display", "none");
@@ -24,7 +24,7 @@ $(function () {
 
 // will be invoked when clicking on the recommended movies
 function recommendcard(e) {
-  var my_api_key = "b81053b72be3942e897a92721bd9a2d2";
+  var my_api_key = "your API key";
   var title = e.getAttribute("title");
   load_details(my_api_key, title);
 }
